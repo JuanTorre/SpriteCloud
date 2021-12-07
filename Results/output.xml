@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on darwin)" generated="20211206 20:02:00.921" rpa="false" schemaversion="2">
+<suite id="s1" name="DemoQATest" source="/Users/juan.torre/SpriteCloud/Tests/DemoQA/DemoQATest.robot">
+<test id="s1-t1" name="Open DemoQA Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211206 20:02:01.127" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/'.</msg>
+<status status="PASS" starttime="20211206 20:02:01.127" endtime="20211206 20:02:12.195"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>1900</arg>
+<arg>1600</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20211206 20:02:12.195" endtime="20211206 20:02:12.323"/>
+</kw>
+<kw name="Verify Banner Image is Displayed" library="LandingPagePO">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${banner_image}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 20:02:12.324" endtime="20211206 20:02:12.349"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${banner_image}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 20:02:12.349" endtime="20211206 20:02:12.384"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 20:02:14.385" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 20:02:12.385" endtime="20211206 20:02:14.385"/>
+</kw>
+<status status="PASS" starttime="20211206 20:02:12.324" endtime="20211206 20:02:14.386"/>
+</kw>
+<kw name="Verify Menu in Landing Page is Displayed" library="LandingPagePO">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${banner_image}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 20:02:14.387" endtime="20211206 20:02:14.405"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${menu_elements}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 20:02:14.406" endtime="20211206 20:02:14.421"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${menu_forms}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 20:02:14.421" endtime="20211206 20:02:14.437"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${menu_alerts}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 20:02:14.437" endtime="20211206 20:02:14.451"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${menu_widgets}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 20:02:14.451" endtime="20211206 20:02:14.465"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${menu_interactions}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 20:02:14.465" endtime="20211206 20:02:14.478"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${menu_book}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 20:02:14.478" endtime="20211206 20:02:14.490"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 20:02:17.491" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211206 20:02:14.490" endtime="20211206 20:02:17.491"/>
+</kw>
+<status status="PASS" starttime="20211206 20:02:14.386" endtime="20211206 20:02:17.492"/>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211206 20:02:17.506" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 511011
+9   chromedriver                        0x000000010c60c75e chromedriver + 337758
+10  chromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
+</msg>
+<status status="FAIL" starttime="20211206 20:02:17.497" endtime="20211206 20:02:17.506"/>
+</kw>
+<msg timestamp="20211206 20:02:17.506" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 5...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
+<msg timestamp="20211206 20:02:17.508" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 511011
+9   chromedriver                        0x000000010c60c75e chromedriver + 337758
+10  chromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
+</msg>
+<status status="FAIL" starttime="20211206 20:02:17.492" endtime="20211206 20:02:17.508"/>
+</kw>
+<status status="FAIL" starttime="20211206 20:02:01.127" endtime="20211206 20:02:17.508">NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 5...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</status>
+</test>
+<test id="s1-t2" name="Verify Landing Page Menu Navigation is Working">
+<kw name="Navigate to Elements Page" library="ElementsPO">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${menu_elements}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211206 20:02:17.517" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 511011
+9   chromedriver                        0x000000010c60c75e chromedriver + 337758
+10  chromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
+</msg>
+<status status="FAIL" starttime="20211206 20:02:17.513" endtime="20211206 20:02:17.517"/>
+</kw>
+<msg timestamp="20211206 20:02:17.517" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 5...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
+<msg timestamp="20211206 20:02:17.519" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 511011
+9   chromedriver                        0x000000010c60c75e chromedriver + 337758
+10  chromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
+</msg>
+<status status="FAIL" starttime="20211206 20:02:17.510" endtime="20211206 20:02:17.519"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${menu_elements}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211206 20:02:17.519" endtime="20211206 20:02:17.519"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211206 20:02:17.519" endtime="20211206 20:02:17.519"/>
+</kw>
+<status status="FAIL" starttime="20211206 20:02:17.510" endtime="20211206 20:02:17.520"/>
+</kw>
+<kw name="Verify Elements Page is Displayed" library="ElementsPO">
+<status status="NOT RUN" starttime="20211206 20:02:17.520" endtime="20211206 20:02:17.520"/>
+</kw>
+<kw name="Click the Header Image" library="LandingPagePO">
+<status status="NOT RUN" starttime="20211206 20:02:17.520" endtime="20211206 20:02:17.520"/>
+</kw>
+<kw name="Navigate to Forms Page" library="LandingPagePO">
+<status status="NOT RUN" starttime="20211206 20:02:17.520" endtime="20211206 20:02:17.520"/>
+</kw>
+<kw name="Verify Forms Page is Displayed" library="LandingPagePO">
+<status status="NOT RUN" starttime="20211206 20:02:17.521" endtime="20211206 20:02:17.521"/>
+</kw>
+<kw name="Click the Header Image" library="LandingPagePO">
+<status status="NOT RUN" starttime="20211206 20:02:17.521" endtime="20211206 20:02:17.521"/>
+</kw>
+<kw name="Navigate to Alerts Page" library="LandingPagePO">
+<status status="NOT RUN" starttime="20211206 20:02:17.521" endtime="20211206 20:02:17.521"/>
+</kw>
+<kw name="Verify Alerts Page is Displayed" library="LandingPagePO">
+<status status="NOT RUN" starttime="20211206 20:02:17.521" endtime="20211206 20:02:17.521"/>
+</kw>
+<kw name="Click the Header Image" library="LandingPagePO">
+<status status="NOT RUN" starttime="20211206 20:02:17.521" endtime="20211206 20:02:17.521"/>
+</kw>
+<kw name="Navigate to Widgets Page" library="LandingPagePO">
+<status status="NOT RUN" starttime="20211206 20:02:17.521" endtime="20211206 20:02:17.521"/>
+</kw>
+<kw name="Verify Widgets Page is Displayed" library="LandingPagePO">
+<status status="NOT RUN" starttime="20211206 20:02:17.521" endtime="20211206 20:02:17.521"/>
+</kw>
+<kw name="Click the Header Image" library="LandingPagePO">
+<status status="NOT RUN" starttime="20211206 20:02:17.521" endtime="20211206 20:02:17.522"/>
+</kw>
+<kw name="Navigate to Interactions Page" library="LandingPagePO">
+<status status="NOT RUN" starttime="20211206 20:02:17.522" endtime="20211206 20:02:17.522"/>
+</kw>
+<kw name="Verify Interactions Page is Displayed" library="LandingPagePO">
+<status status="NOT RUN" starttime="20211206 20:02:17.522" endtime="20211206 20:02:17.522"/>
+</kw>
+<kw name="Click the Header Image" library="LandingPagePO">
+<status status="NOT RUN" starttime="20211206 20:02:17.522" endtime="20211206 20:02:17.522"/>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="NOT RUN" starttime="20211206 20:02:17.522" endtime="20211206 20:02:17.522"/>
+</kw>
+<status status="FAIL" starttime="20211206 20:02:17.509" endtime="20211206 20:02:17.522">NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 5...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</status>
+</test>
+<test id="s1-t3" name="Test the Text Box Functionality">
+<kw name="Navigate to Elements Page" library="ElementsPO">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${menu_elements}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211206 20:02:17.530" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 511011
+9   chromedriver                        0x000000010c60c75e chromedriver + 337758
+10  chromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
+</msg>
+<status status="FAIL" starttime="20211206 20:02:17.526" endtime="20211206 20:02:17.530"/>
+</kw>
+<msg timestamp="20211206 20:02:17.530" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 5...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
+<msg timestamp="20211206 20:02:17.531" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 511011
+9   chromedriver                        0x000000010c60c75e chromedriver + 337758
+10  chromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
+</msg>
+<status status="FAIL" starttime="20211206 20:02:17.523" endtime="20211206 20:02:17.531"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${menu_elements}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211206 20:02:17.532" endtime="20211206 20:02:17.532"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211206 20:02:17.532" endtime="20211206 20:02:17.532"/>
+</kw>
+<status status="FAIL" starttime="20211206 20:02:17.523" endtime="20211206 20:02:17.532"/>
+</kw>
+<kw name="Verify Elements Menu Navigations is Displayed" library="ElementsPO">
+<status status="NOT RUN" starttime="20211206 20:02:17.532" endtime="20211206 20:02:17.532"/>
+</kw>
+<kw name="Click Elements sub-menu" library="ElementsPO">
+<status status="NOT RUN" starttime="20211206 20:02:17.532" endtime="20211206 20:02:17.533"/>
+</kw>
+<kw name="Select Text Box from Elements Menu" library="ElementsPO">
+<status status="NOT RUN" starttime="20211206 20:02:17.533" endtime="20211206 20:02:17.533"/>
+</kw>
+<kw name="Verify Text Box Form is Displayed" library="ElementsPO">
+<status status="NOT RUN" starttime="20211206 20:02:17.533" endtime="20211206 20:02:17.533"/>
+</kw>
+<kw name="Fill Text Box Form" library="ElementsPO">
+<status status="NOT RUN" starttime="20211206 20:02:17.533" endtime="20211206 20:02:17.533"/>
+</kw>
+<kw name="Click Submit button" library="ElementsPO">
+<status status="NOT RUN" starttime="20211206 20:02:17.533" endtime="20211206 20:02:17.533"/>
+</kw>
+<kw name="Verify Form is Submitted" library="ElementsPO">
+<status status="NOT RUN" starttime="20211206 20:02:17.533" endtime="20211206 20:02:17.533"/>
+</kw>
+<kw name="Click the Header Image" library="LandingPagePO">
+<status status="NOT RUN" starttime="20211206 20:02:17.533" endtime="20211206 20:02:17.533"/>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="NOT RUN" starttime="20211206 20:02:17.534" endtime="20211206 20:02:17.534"/>
+</kw>
+<status status="FAIL" starttime="20211206 20:02:17.523" endtime="20211206 20:02:17.534">NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 5...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</status>
+</test>
+<test id="s1-t4" name="Test the Radio Button Functionality">
+<kw name="Navigate to Elements Page" library="ElementsPO">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${menu_elements}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211206 20:02:17.543" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 511011
+9   chromedriver                        0x000000010c60c75e chromedriver + 337758
+10  chromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
+</msg>
+<status status="FAIL" starttime="20211206 20:02:17.539" endtime="20211206 20:02:17.543"/>
+</kw>
+<msg timestamp="20211206 20:02:17.543" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 5...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
+<msg timestamp="20211206 20:02:17.544" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 511011
+9   chromedriver                        0x000000010c60c75e chromedriver + 337758
+10  chromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
+</msg>
+<status status="FAIL" starttime="20211206 20:02:17.535" endtime="20211206 20:02:17.544"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${menu_elements}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211206 20:02:17.544" endtime="20211206 20:02:17.544"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211206 20:02:17.544" endtime="20211206 20:02:17.544"/>
+</kw>
+<status status="FAIL" starttime="20211206 20:02:17.535" endtime="20211206 20:02:17.545"/>
+</kw>
+<kw name="Verify Elements Menu Navigations is Displayed" library="ElementsPO">
+<status status="NOT RUN" starttime="20211206 20:02:17.545" endtime="20211206 20:02:17.545"/>
+</kw>
+<kw name="Click Elements sub-menu" library="ElementsPO">
+<status status="NOT RUN" starttime="20211206 20:02:17.545" endtime="20211206 20:02:17.545"/>
+</kw>
+<kw name="Select Radio Button from Elements Menu" library="ElementsPO">
+<status status="NOT RUN" starttime="20211206 20:02:17.545" endtime="20211206 20:02:17.545"/>
+</kw>
+<kw name="Select Yes Radio Button" library="ElementsPO">
+<status status="NOT RUN" starttime="20211206 20:02:17.546" endtime="20211206 20:02:17.546"/>
+</kw>
+<kw name="Select Impressive Radio Button" library="ElementsPO">
+<status status="NOT RUN" starttime="20211206 20:02:17.546" endtime="20211206 20:02:17.546"/>
+</kw>
+<kw name="Click the Header Image" library="LandingPagePO">
+<status status="NOT RUN" starttime="20211206 20:02:17.546" endtime="20211206 20:02:17.546"/>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="NOT RUN" starttime="20211206 20:02:17.546" endtime="20211206 20:02:17.546"/>
+</kw>
+<status status="FAIL" starttime="20211206 20:02:17.534" endtime="20211206 20:02:17.546">NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 5...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</status>
+</test>
+<test id="s1-t5" name="Test Small Modal dialogs">
+<kw name="Navigate to Alerts Page" library="LandingPagePO">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${menu_alerts}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211206 20:02:17.554" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 511011
+9   chromedriver                        0x000000010c60c75e chromedriver + 337758
+10  chromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
+</msg>
+<status status="FAIL" starttime="20211206 20:02:17.550" endtime="20211206 20:02:17.554"/>
+</kw>
+<msg timestamp="20211206 20:02:17.554" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 5...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
+<msg timestamp="20211206 20:02:17.555" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 511011
+9   chromedriver                        0x000000010c60c75e chromedriver + 337758
+10  chromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
+</msg>
+<status status="FAIL" starttime="20211206 20:02:17.547" endtime="20211206 20:02:17.555"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${menu_alerts}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211206 20:02:17.556" endtime="20211206 20:02:17.556"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211206 20:02:17.556" endtime="20211206 20:02:17.556"/>
+</kw>
+<status status="FAIL" starttime="20211206 20:02:17.547" endtime="20211206 20:02:17.556"/>
+</kw>
+<kw name="Select Modal Dialogs from Alerts menu" library="AlertsPO">
+<status status="NOT RUN" starttime="20211206 20:02:17.556" endtime="20211206 20:02:17.556"/>
+</kw>
+<kw name="Verify Modal Dialogs are Displayed" library="AlertsPO">
+<status status="NOT RUN" starttime="20211206 20:02:17.557" endtime="20211206 20:02:17.557"/>
+</kw>
+<kw name="Click on the Small Modal" library="AlertsPO">
+<status status="NOT RUN" starttime="20211206 20:02:17.557" endtime="20211206 20:02:17.557"/>
+</kw>
+<kw name="Verify Small Modal is Displayed" library="AlertsPO">
+<status status="NOT RUN" starttime="20211206 20:02:17.557" endtime="20211206 20:02:17.557"/>
+</kw>
+<kw name="Close the Small Modal" library="AlertsPO">
+<status status="NOT RUN" starttime="20211206 20:02:17.557" endtime="20211206 20:02:17.557"/>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="NOT RUN" starttime="20211206 20:02:17.557" endtime="20211206 20:02:17.557"/>
+</kw>
+<status status="FAIL" starttime="20211206 20:02:17.547" endtime="20211206 20:02:17.557">NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 5...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</status>
+</test>
+<test id="s1-t6" name="Test Large Modal dialog">
+<kw name="Verify Modal Dialogs are Displayed" library="AlertsPO">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${modal_dialogs_title}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211206 20:02:17.565" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 511011
+9   chromedriver                        0x000000010c60c75e chromedriver + 337758
+10  chromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
+</msg>
+<status status="FAIL" starttime="20211206 20:02:17.561" endtime="20211206 20:02:17.565"/>
+</kw>
+<msg timestamp="20211206 20:02:17.565" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 5...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
+<msg timestamp="20211206 20:02:17.566" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 511011
+9   chromedriver                        0x000000010c60c75e chromedriver + 337758
+10  chromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
+</msg>
+<status status="FAIL" starttime="20211206 20:02:17.558" endtime="20211206 20:02:17.566"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${modals_instructions}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="NOT RUN" starttime="20211206 20:02:17.566" endtime="20211206 20:02:17.567"/>
+</kw>
+<status status="FAIL" starttime="20211206 20:02:17.558" endtime="20211206 20:02:17.567"/>
+</kw>
+<kw name="Click on the Large Modal" library="AlertsPO">
+<status status="NOT RUN" starttime="20211206 20:02:17.567" endtime="20211206 20:02:17.567"/>
+</kw>
+<kw name="Verify Large Modal is Displayed" library="AlertsPO">
+<status status="NOT RUN" starttime="20211206 20:02:17.567" endtime="20211206 20:02:17.567"/>
+</kw>
+<kw name="Close the Large Modal" library="AlertsPO">
+<status status="NOT RUN" starttime="20211206 20:02:17.567" endtime="20211206 20:02:17.567"/>
+</kw>
+<kw name="Click the Header Image" library="LandingPagePO">
+<status status="NOT RUN" starttime="20211206 20:02:17.568" endtime="20211206 20:02:17.568"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20211206 20:02:17.568" endtime="20211206 20:02:17.568"/>
+</kw>
+<status status="FAIL" starttime="20211206 20:02:17.558" endtime="20211206 20:02:17.568">NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 5...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</status>
+</test>
+<status status="FAIL" starttime="20211206 20:02:00.922" endtime="20211206 20:02:17.569"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="6" skip="0" id="s1" name="DemoQATest">DemoQATest</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20211206 20:02:17.506" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 5...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
+<msg timestamp="20211206 20:02:17.517" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 5...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
+<msg timestamp="20211206 20:02:17.530" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 5...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
+<msg timestamp="20211206 20:02:17.543" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 5...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
+<msg timestamp="20211206 20:02:17.554" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 5...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
+<msg timestamp="20211206 20:02:17.565" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
+3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
+4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
+5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
+6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
+7   chromedriver                        0x000000010c648b0c chromedriver + 584460
+8   chromedriver                        0x000000010c636c23 chromedriver + 5...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x000000010c60da95 chromedriver + 342677
+11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
+</errors>
+</robot>
