@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on darwin)" generated="20211206 22:01:52.935" rpa="false" schemaversion="2">
+<suite id="s1" name="PetStoreAPI" source="/Users/juan.torre/SpriteCloud/Tests/PetStore/PetStoreAPI.robot">
+<test id="s1-t1" name="TC_01 Get Pet Store Inventory">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>PetStore_API</arg>
+<arg>${base_endpoint}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20211206 22:01:53.064" level="INFO">Creating Session using : alias=PetStore_API, url=http://petstore.swagger.io/v2, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20211206 22:01:53.064" endtime="20211206 22:01:53.065"/>
+</kw>
+<kw name="GET On Session" library="RequestsLibrary">
+<var>${get_inventory}</var>
+<arg>PetStore_API</arg>
+<arg>${store_endpoint}/${inventory_endpoint}</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<msg timestamp="20211206 22:01:53.708" level="INFO">GET Request : url=http://petstore.swagger.io/v2/store/inventory (redirected) 
+ path_url=/v2/store/inventory 
+ headers={'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20211206 22:01:53.708" level="INFO">GET Response : url=https://petstore.swagger.io:443/v2/store/inventory 
+ status=200, reason=OK 
+ headers={'Date': 'Tue, 07 Dec 2021 04:01:53 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'} 
+ body={"totvs":1,"sold":75,"A venda":2,"booked":1,"TestListPetTestStatusCloudNew":1,"string":84,"alive":24,"unavailable":3,"Busy":1,"happy":12,"pending":56,"available":599,"avalible":1,"active":60,"Not Available":1,"Неизвестен":1,"SOLD":1,"post":1,"sold out":1,"avaliable":1,"oops":1,"true":1,"Available":1} 
+ </msg>
+<msg timestamp="20211206 22:01:53.709" level="INFO">/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/urllib3/connectionpool.py:1013: InsecureRequestWarning: Unverified HTTPS request is being made to host 'petstore.swagger.io'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg timestamp="20211206 22:01:53.709" level="INFO">${get_inventory} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20211206 22:01:53.065" endtime="20211206 22:01:53.709"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${inventory_response}</var>
+<arg>${get_inventory.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20211206 22:01:53.710" level="INFO">${inventory_response} = 200</msg>
+<status status="PASS" starttime="20211206 22:01:53.709" endtime="20211206 22:01:53.710"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${inventory_response}</arg>
+<arg>${200_response}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20211206 22:01:53.711" endtime="20211206 22:01:53.711"/>
+</kw>
+<status status="PASS" starttime="20211206 22:01:53.064" endtime="20211206 22:01:53.711"/>
+</test>
+<test id="s1-t2" name="TC_02 Update Existent Pet Data">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>PetStore_API</arg>
+<arg>${base_endpoint}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20211206 22:01:53.712" level="INFO">Creating Session using : alias=PetStore_API, url=http://petstore.swagger.io/v2, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20211206 22:01:53.712" endtime="20211206 22:01:53.712"/>
+</kw>
+<kw name="POST On Session" library="RequestsLibrary">
+<var>${pet_response}</var>
+<arg>PetStore_API</arg>
+<arg>${pet_endpoint}/9223372016854784000</arg>
+<arg>${secondpetname}</arg>
+<arg>${pet_status}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<msg timestamp="20211206 22:01:54.293" level="INFO">POST Request : url=http://petstore.swagger.io/v2/pet/9223372016854784000 (redirected) 
+ path_url=/v2/pet/9223372016854784000 
+ headers={'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '5'} 
+ body=Rocky 
+ </msg>
+<msg timestamp="20211206 22:01:54.293" level="INFO">GET Response : url=https://petstore.swagger.io:443/v2/pet/9223372016854784000 
+ status=200, reason=OK 
+ headers={'Date': 'Tue, 07 Dec 2021 04:01:54 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'} 
+ body={"id":9223372016854784000,"category":{"id":0,"name":"Puppy"},"name":"Rocky","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"} 
+ </msg>
+<msg timestamp="20211206 22:01:54.293" level="INFO">/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/urllib3/connectionpool.py:1013: InsecureRequestWarning: Unverified HTTPS request is being made to host 'petstore.swagger.io'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg timestamp="20211206 22:01:54.293" level="INFO">${pet_response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20211206 22:01:53.712" endtime="20211206 22:01:54.294"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${pet_response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211206 22:01:54.294" endtime="20211206 22:01:54.295"/>
+</kw>
+<status status="PASS" starttime="20211206 22:01:53.711" endtime="20211206 22:01:54.295"/>
+</test>
+<test id="s1-t3" name="TC_03 Get Pet by ID and Validate it was updated">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>PetStore_API</arg>
+<arg>${base_endpoint}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20211206 22:01:54.296" level="INFO">Creating Session using : alias=PetStore_API, url=http://petstore.swagger.io/v2, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20211206 22:01:54.296" endtime="20211206 22:01:54.296"/>
+</kw>
+<kw name="GET On Session" library="RequestsLibrary">
+<var>${get_id}</var>
+<arg>PetStore_API</arg>
+<arg>${pet_endpoint}/${existent_id}</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<msg timestamp="20211206 22:01:54.833" level="INFO">GET Request : url=http://petstore.swagger.io/v2/pet/9223372016854784000 (redirected) 
+ path_url=/v2/pet/9223372016854784000 
+ headers={'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20211206 22:01:54.833" level="INFO">GET Response : url=https://petstore.swagger.io:443/v2/pet/9223372016854784000 
+ status=200, reason=OK 
+ headers={'Date': 'Tue, 07 Dec 2021 04:01:54 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'} 
+ body={"id":9223372016854784000,"category":{"id":0,"name":"Puppy"},"name":"Rocky","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"} 
+ </msg>
+<msg timestamp="20211206 22:01:54.833" level="INFO">/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/urllib3/connectionpool.py:1013: InsecureRequestWarning: Unverified HTTPS request is being made to host 'petstore.swagger.io'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg timestamp="20211206 22:01:54.834" level="INFO">${get_id} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20211206 22:01:54.297" endtime="20211206 22:01:54.834"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${response_code}</var>
+<arg>${get_id.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20211206 22:01:54.835" level="INFO">${response_code} = 200</msg>
+<status status="PASS" starttime="20211206 22:01:54.834" endtime="20211206 22:01:54.835"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${response code}</arg>
+<arg>${200_response}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20211206 22:01:54.835" endtime="20211206 22:01:54.836"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${json_response}</var>
+<arg>${get_id.json()}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20211206 22:01:54.837" level="INFO">${json_response} = {'id': 9223372016854784000, 'category': {'id': 0, 'name': 'Puppy'}, 'name': 'Rocky', 'photoUrls': ['string'], 'tags': [{'id': 0, 'name': 'string'}], 'status': 'sold'}</msg>
+<status status="PASS" starttime="20211206 22:01:54.836" endtime="20211206 22:01:54.837"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${json_response}</arg>
+<arg>${existent_pet_json}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20211206 22:01:54.837" endtime="20211206 22:01:54.838"/>
+</kw>
+<status status="PASS" starttime="20211206 22:01:54.296" endtime="20211206 22:01:54.838"/>
+</test>
+<status status="PASS" starttime="20211206 22:01:52.936" endtime="20211206 22:01:54.839"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="PetStoreAPI">PetStoreAPI</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

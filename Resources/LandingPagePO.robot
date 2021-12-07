@@ -5,7 +5,7 @@ Library     SeleniumLibrary
 
 #Browser settings
 
-${browser}  chrome
+${browser}  headlesschrome
 ${url}  https://demoqa.com/
 
 #landing page

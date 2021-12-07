@@ -11,7 +11,6 @@ Open DemoQA Page
     Set Window Size	 1900   1600
     Verify Banner Image is Displayed
     Verify Menu in Landing Page is Displayed
-    reload page
 
 Verify Landing Page Menu Navigation is Working
     Navigate to Elements Page
@@ -29,7 +28,6 @@ Verify Landing Page Menu Navigation is Working
     Navigate to Interactions Page
     Verify Interactions Page is Displayed
     Click the Header Image
-    reload page
 
 Test the Text Box Functionality
     Navigate to Elements Page
@@ -41,7 +39,6 @@ Test the Text Box Functionality
     Click Submit button
     Verify Form is Submitted
     Click the Header Image
-    reload page
 
 Test the Radio Button Functionality
     Navigate to Elements Page
@@ -51,16 +48,14 @@ Test the Radio Button Functionality
     Select Yes Radio Button
     Select Impressive Radio Button
     Click the Header Image
-    reload page
 
-Test Small Modal dialogs
+Test Small Modal dialog
     Navigate to Alerts Page
     Select Modal Dialogs from Alerts menu
     Verify Modal Dialogs are Displayed
     Click on the Small Modal
     Verify Small Modal is Displayed
     Close the Small Modal
-    reload page
 
 Test Large Modal dialog
     Verify Modal Dialogs are Displayed

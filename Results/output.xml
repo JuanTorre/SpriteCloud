@@ -1,1082 +1,1063 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on darwin)" generated="20211206 20:02:00.921" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.2 (Python 3.10.0 on darwin)" generated="20211206 21:35:06.127" rpa="false" schemaversion="2">
 <suite id="s1" name="DemoQATest" source="/Users/juan.torre/SpriteCloud/Tests/DemoQA/DemoQATest.robot">
 <test id="s1-t1" name="Open DemoQA Page">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211206 20:02:01.127" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/'.</msg>
-<status status="PASS" starttime="20211206 20:02:01.127" endtime="20211206 20:02:12.195"/>
+<msg timestamp="20211206 21:35:06.343" level="INFO">Opening browser 'headlesschrome' to base url 'https://demoqa.com/'.</msg>
+<status status="PASS" starttime="20211206 21:35:06.343" endtime="20211206 21:35:10.283"/>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <arg>1900</arg>
 <arg>1600</arg>
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="PASS" starttime="20211206 20:02:12.195" endtime="20211206 20:02:12.323"/>
+<status status="PASS" starttime="20211206 21:35:10.283" endtime="20211206 21:35:10.388"/>
 </kw>
 <kw name="Verify Banner Image is Displayed" library="LandingPagePO">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${banner_image}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211206 20:02:12.324" endtime="20211206 20:02:12.349"/>
+<status status="PASS" starttime="20211206 21:35:10.389" endtime="20211206 21:35:10.413"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${banner_image}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20211206 20:02:12.349" endtime="20211206 20:02:12.384"/>
+<status status="PASS" starttime="20211206 21:35:10.414" endtime="20211206 21:35:10.436"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211206 20:02:14.385" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211206 20:02:12.385" endtime="20211206 20:02:14.385"/>
+<msg timestamp="20211206 21:35:12.437" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:35:10.436" endtime="20211206 21:35:12.438"/>
 </kw>
-<status status="PASS" starttime="20211206 20:02:12.324" endtime="20211206 20:02:14.386"/>
+<status status="PASS" starttime="20211206 21:35:10.389" endtime="20211206 21:35:12.438"/>
 </kw>
 <kw name="Verify Menu in Landing Page is Displayed" library="LandingPagePO">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${banner_image}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211206 20:02:14.387" endtime="20211206 20:02:14.405"/>
+<status status="PASS" starttime="20211206 21:35:12.439" endtime="20211206 21:35:12.456"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${menu_elements}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211206 20:02:14.406" endtime="20211206 20:02:14.421"/>
+<status status="PASS" starttime="20211206 21:35:12.456" endtime="20211206 21:35:12.473"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${menu_forms}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211206 20:02:14.421" endtime="20211206 20:02:14.437"/>
+<status status="PASS" starttime="20211206 21:35:12.474" endtime="20211206 21:35:12.491"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${menu_alerts}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211206 20:02:14.437" endtime="20211206 20:02:14.451"/>
+<status status="PASS" starttime="20211206 21:35:12.491" endtime="20211206 21:35:12.505"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${menu_widgets}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211206 20:02:14.451" endtime="20211206 20:02:14.465"/>
+<status status="PASS" starttime="20211206 21:35:12.505" endtime="20211206 21:35:12.518"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${menu_interactions}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211206 20:02:14.465" endtime="20211206 20:02:14.478"/>
+<status status="PASS" starttime="20211206 21:35:12.518" endtime="20211206 21:35:12.531"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${menu_book}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211206 20:02:14.478" endtime="20211206 20:02:14.490"/>
+<status status="PASS" starttime="20211206 21:35:12.532" endtime="20211206 21:35:12.544"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211206 20:02:17.491" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20211206 20:02:14.490" endtime="20211206 20:02:17.491"/>
+<msg timestamp="20211206 21:35:15.545" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211206 21:35:12.544" endtime="20211206 21:35:15.546"/>
 </kw>
-<status status="PASS" starttime="20211206 20:02:14.386" endtime="20211206 20:02:17.492"/>
+<status status="PASS" starttime="20211206 21:35:12.438" endtime="20211206 21:35:15.546"/>
 </kw>
-<kw name="Reload Page" library="SeleniumLibrary">
-<doc>Simulates user reloading page.</doc>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211206 20:02:17.506" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 511011
-9   chromedriver                        0x000000010c60c75e chromedriver + 337758
-10  chromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
-</msg>
-<status status="FAIL" starttime="20211206 20:02:17.497" endtime="20211206 20:02:17.506"/>
-</kw>
-<msg timestamp="20211206 20:02:17.506" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 5...
-    [ Message content over the limit has been removed. ]
-...hromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
-<msg timestamp="20211206 20:02:17.508" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 511011
-9   chromedriver                        0x000000010c60c75e chromedriver + 337758
-10  chromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
-</msg>
-<status status="FAIL" starttime="20211206 20:02:17.492" endtime="20211206 20:02:17.508"/>
-</kw>
-<status status="FAIL" starttime="20211206 20:02:01.127" endtime="20211206 20:02:17.508">NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 5...
-    [ Message content over the limit has been removed. ]
-...hromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</status>
+<status status="PASS" starttime="20211206 21:35:06.342" endtime="20211206 21:35:15.547"/>
 </test>
 <test id="s1-t2" name="Verify Landing Page Menu Navigation is Working">
 <kw name="Navigate to Elements Page" library="ElementsPO">
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${menu_elements}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211206 20:02:17.517" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 511011
-9   chromedriver                        0x000000010c60c75e chromedriver + 337758
-10  chromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
-</msg>
-<status status="FAIL" starttime="20211206 20:02:17.513" endtime="20211206 20:02:17.517"/>
-</kw>
-<msg timestamp="20211206 20:02:17.517" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 5...
-    [ Message content over the limit has been removed. ]
-...hromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
-<msg timestamp="20211206 20:02:17.519" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 511011
-9   chromedriver                        0x000000010c60c75e chromedriver + 337758
-10  chromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
-</msg>
-<status status="FAIL" starttime="20211206 20:02:17.510" endtime="20211206 20:02:17.519"/>
+<status status="PASS" starttime="20211206 21:35:15.549" endtime="20211206 21:35:15.572"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${menu_elements}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20211206 20:02:17.519" endtime="20211206 20:02:17.519"/>
+<msg timestamp="20211206 21:35:15.573" level="INFO">Clicking element '//h5[contains(text(),'Elements')]'.</msg>
+<status status="PASS" starttime="20211206 21:35:15.572" endtime="20211206 21:35:15.753"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20211206 20:02:17.519" endtime="20211206 20:02:17.519"/>
+<msg timestamp="20211206 21:35:17.755" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:35:15.754" endtime="20211206 21:35:17.755"/>
 </kw>
-<status status="FAIL" starttime="20211206 20:02:17.510" endtime="20211206 20:02:17.520"/>
+<status status="PASS" starttime="20211206 21:35:15.548" endtime="20211206 21:35:17.756"/>
 </kw>
 <kw name="Verify Elements Page is Displayed" library="ElementsPO">
-<status status="NOT RUN" starttime="20211206 20:02:17.520" endtime="20211206 20:02:17.520"/>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${elements_header}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 21:35:17.757" endtime="20211206 21:35:17.775"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${elements_instructions}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 21:35:17.775" endtime="20211206 21:35:17.792"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:35:19.793" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:35:17.792" endtime="20211206 21:35:19.793"/>
+</kw>
+<status status="PASS" starttime="20211206 21:35:17.756" endtime="20211206 21:35:19.793"/>
 </kw>
 <kw name="Click the Header Image" library="LandingPagePO">
-<status status="NOT RUN" starttime="20211206 20:02:17.520" endtime="20211206 20:02:17.520"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${header_image}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:35:19.794" endtime="20211206 21:35:19.818"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${header_image}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:35:19.818" level="INFO">Clicking element '//header/a[1]/img[1]'.</msg>
+<status status="PASS" starttime="20211206 21:35:19.818" endtime="20211206 21:35:20.313"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:35:22.314" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:35:20.313" endtime="20211206 21:35:22.314"/>
+</kw>
+<status status="PASS" starttime="20211206 21:35:19.794" endtime="20211206 21:35:22.315"/>
 </kw>
 <kw name="Navigate to Forms Page" library="LandingPagePO">
-<status status="NOT RUN" starttime="20211206 20:02:17.520" endtime="20211206 20:02:17.520"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${menu_forms}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:35:22.316" endtime="20211206 21:35:22.337"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${menu_forms}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:35:22.337" level="INFO">Clicking element '//h5[contains(text(),'Forms')]'.</msg>
+<status status="PASS" starttime="20211206 21:35:22.337" endtime="20211206 21:35:22.379"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:35:24.380" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:35:22.379" endtime="20211206 21:35:24.380"/>
+</kw>
+<status status="PASS" starttime="20211206 21:35:22.315" endtime="20211206 21:35:24.380"/>
 </kw>
 <kw name="Verify Forms Page is Displayed" library="LandingPagePO">
-<status status="NOT RUN" starttime="20211206 20:02:17.521" endtime="20211206 20:02:17.521"/>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${forms_header}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 21:35:24.381" endtime="20211206 21:35:24.403"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:35:26.404" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:35:24.403" endtime="20211206 21:35:26.404"/>
+</kw>
+<status status="PASS" starttime="20211206 21:35:24.381" endtime="20211206 21:35:26.404"/>
 </kw>
 <kw name="Click the Header Image" library="LandingPagePO">
-<status status="NOT RUN" starttime="20211206 20:02:17.521" endtime="20211206 20:02:17.521"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${header_image}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:35:26.405" endtime="20211206 21:35:26.425"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${header_image}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:35:26.425" level="INFO">Clicking element '//header/a[1]/img[1]'.</msg>
+<status status="PASS" starttime="20211206 21:35:26.425" endtime="20211206 21:35:26.941"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:35:28.943" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:35:26.941" endtime="20211206 21:35:28.944"/>
+</kw>
+<status status="PASS" starttime="20211206 21:35:26.405" endtime="20211206 21:35:28.944"/>
 </kw>
 <kw name="Navigate to Alerts Page" library="LandingPagePO">
-<status status="NOT RUN" starttime="20211206 20:02:17.521" endtime="20211206 20:02:17.521"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${menu_alerts}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:35:28.945" endtime="20211206 21:35:28.966"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${menu_alerts}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:35:28.967" level="INFO">Clicking element '//h5[contains(text(),'Alerts, Frame &amp; Windows')]'.</msg>
+<status status="PASS" starttime="20211206 21:35:28.966" endtime="20211206 21:35:29.009"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:35:31.011" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:35:29.009" endtime="20211206 21:35:31.011"/>
+</kw>
+<status status="PASS" starttime="20211206 21:35:28.944" endtime="20211206 21:35:31.011"/>
 </kw>
 <kw name="Verify Alerts Page is Displayed" library="LandingPagePO">
-<status status="NOT RUN" starttime="20211206 20:02:17.521" endtime="20211206 20:02:17.521"/>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${alerts_header}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 21:35:31.012" endtime="20211206 21:35:31.031"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:35:33.033" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:35:31.031" endtime="20211206 21:35:33.034"/>
+</kw>
+<status status="PASS" starttime="20211206 21:35:31.012" endtime="20211206 21:35:33.034"/>
 </kw>
 <kw name="Click the Header Image" library="LandingPagePO">
-<status status="NOT RUN" starttime="20211206 20:02:17.521" endtime="20211206 20:02:17.521"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${header_image}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:35:33.035" endtime="20211206 21:35:33.058"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${header_image}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:35:33.058" level="INFO">Clicking element '//header/a[1]/img[1]'.</msg>
+<status status="PASS" starttime="20211206 21:35:33.058" endtime="20211206 21:35:33.560"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:35:35.562" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:35:33.560" endtime="20211206 21:35:35.562"/>
+</kw>
+<status status="PASS" starttime="20211206 21:35:33.034" endtime="20211206 21:35:35.562"/>
 </kw>
 <kw name="Navigate to Widgets Page" library="LandingPagePO">
-<status status="NOT RUN" starttime="20211206 20:02:17.521" endtime="20211206 20:02:17.521"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${menu_widgets}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:35:35.563" endtime="20211206 21:35:35.584"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${menu_widgets}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:35:35.585" level="INFO">Clicking element '//h5[contains(text(),'Widgets')]'.</msg>
+<status status="PASS" starttime="20211206 21:35:35.584" endtime="20211206 21:35:35.627"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:35:37.628" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:35:35.628" endtime="20211206 21:35:37.629"/>
+</kw>
+<status status="PASS" starttime="20211206 21:35:35.563" endtime="20211206 21:35:37.629"/>
 </kw>
 <kw name="Verify Widgets Page is Displayed" library="LandingPagePO">
-<status status="NOT RUN" starttime="20211206 20:02:17.521" endtime="20211206 20:02:17.521"/>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${widgets_header}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 21:35:37.630" endtime="20211206 21:35:37.649"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:35:39.651" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:35:37.649" endtime="20211206 21:35:39.652"/>
+</kw>
+<status status="PASS" starttime="20211206 21:35:37.629" endtime="20211206 21:35:39.652"/>
 </kw>
 <kw name="Click the Header Image" library="LandingPagePO">
-<status status="NOT RUN" starttime="20211206 20:02:17.521" endtime="20211206 20:02:17.522"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${header_image}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:35:39.653" endtime="20211206 21:35:39.672"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${header_image}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:35:39.673" level="INFO">Clicking element '//header/a[1]/img[1]'.</msg>
+<status status="PASS" starttime="20211206 21:35:39.672" endtime="20211206 21:35:40.192"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:35:42.194" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:35:40.192" endtime="20211206 21:35:42.194"/>
+</kw>
+<status status="PASS" starttime="20211206 21:35:39.652" endtime="20211206 21:35:42.194"/>
 </kw>
 <kw name="Navigate to Interactions Page" library="LandingPagePO">
-<status status="NOT RUN" starttime="20211206 20:02:17.522" endtime="20211206 20:02:17.522"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${menu_interactions}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:35:42.195" endtime="20211206 21:35:42.215"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${menu_interactions}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:35:42.216" level="INFO">Clicking element '//h5[contains(text(),'Interactions')]'.</msg>
+<status status="PASS" starttime="20211206 21:35:42.216" endtime="20211206 21:35:42.273"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:35:44.274" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:35:42.273" endtime="20211206 21:35:44.274"/>
+</kw>
+<status status="PASS" starttime="20211206 21:35:42.195" endtime="20211206 21:35:44.274"/>
 </kw>
 <kw name="Verify Interactions Page is Displayed" library="LandingPagePO">
-<status status="NOT RUN" starttime="20211206 20:02:17.522" endtime="20211206 20:02:17.522"/>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${interactions_header}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 21:35:44.275" endtime="20211206 21:35:44.295"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:35:46.295" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:35:44.295" endtime="20211206 21:35:46.295"/>
+</kw>
+<status status="PASS" starttime="20211206 21:35:44.275" endtime="20211206 21:35:46.296"/>
 </kw>
 <kw name="Click the Header Image" library="LandingPagePO">
-<status status="NOT RUN" starttime="20211206 20:02:17.522" endtime="20211206 20:02:17.522"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${header_image}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:35:46.297" endtime="20211206 21:35:46.317"/>
 </kw>
-<kw name="Reload Page" library="SeleniumLibrary">
-<doc>Simulates user reloading page.</doc>
-<status status="NOT RUN" starttime="20211206 20:02:17.522" endtime="20211206 20:02:17.522"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${header_image}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:35:46.318" level="INFO">Clicking element '//header/a[1]/img[1]'.</msg>
+<status status="PASS" starttime="20211206 21:35:46.317" endtime="20211206 21:35:46.812"/>
 </kw>
-<status status="FAIL" starttime="20211206 20:02:17.509" endtime="20211206 20:02:17.522">NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 5...
-    [ Message content over the limit has been removed. ]
-...hromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</status>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:35:48.815" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:35:46.812" endtime="20211206 21:35:48.815"/>
+</kw>
+<status status="PASS" starttime="20211206 21:35:46.296" endtime="20211206 21:35:48.815"/>
+</kw>
+<status status="PASS" starttime="20211206 21:35:15.548" endtime="20211206 21:35:48.816"/>
 </test>
 <test id="s1-t3" name="Test the Text Box Functionality">
 <kw name="Navigate to Elements Page" library="ElementsPO">
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${menu_elements}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211206 20:02:17.530" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 511011
-9   chromedriver                        0x000000010c60c75e chromedriver + 337758
-10  chromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
-</msg>
-<status status="FAIL" starttime="20211206 20:02:17.526" endtime="20211206 20:02:17.530"/>
-</kw>
-<msg timestamp="20211206 20:02:17.530" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 5...
-    [ Message content over the limit has been removed. ]
-...hromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
-<msg timestamp="20211206 20:02:17.531" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 511011
-9   chromedriver                        0x000000010c60c75e chromedriver + 337758
-10  chromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
-</msg>
-<status status="FAIL" starttime="20211206 20:02:17.523" endtime="20211206 20:02:17.531"/>
+<status status="PASS" starttime="20211206 21:35:48.817" endtime="20211206 21:35:48.841"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${menu_elements}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20211206 20:02:17.532" endtime="20211206 20:02:17.532"/>
+<msg timestamp="20211206 21:35:48.842" level="INFO">Clicking element '//h5[contains(text(),'Elements')]'.</msg>
+<status status="PASS" starttime="20211206 21:35:48.842" endtime="20211206 21:35:48.887"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20211206 20:02:17.532" endtime="20211206 20:02:17.532"/>
+<msg timestamp="20211206 21:35:50.889" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:35:48.887" endtime="20211206 21:35:50.889"/>
 </kw>
-<status status="FAIL" starttime="20211206 20:02:17.523" endtime="20211206 20:02:17.532"/>
+<status status="PASS" starttime="20211206 21:35:48.817" endtime="20211206 21:35:50.890"/>
 </kw>
 <kw name="Verify Elements Menu Navigations is Displayed" library="ElementsPO">
-<status status="NOT RUN" starttime="20211206 20:02:17.532" endtime="20211206 20:02:17.532"/>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${elements_menu}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 21:35:50.891" endtime="20211206 21:35:50.910"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${alerts_menu}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 21:35:50.910" endtime="20211206 21:35:50.928"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${widgets_menu}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 21:35:50.928" endtime="20211206 21:35:50.945"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:35:53.947" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211206 21:35:50.945" endtime="20211206 21:35:53.947"/>
+</kw>
+<status status="PASS" starttime="20211206 21:35:50.890" endtime="20211206 21:35:53.947"/>
 </kw>
 <kw name="Click Elements sub-menu" library="ElementsPO">
-<status status="NOT RUN" starttime="20211206 20:02:17.532" endtime="20211206 20:02:17.533"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elements_menu}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:35:53.948" endtime="20211206 21:35:53.969"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${elements_menu}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:35:53.969" level="INFO">Clicking element '//div[@class="header-text"][contains(text(),'Elements')]'.</msg>
+<status status="PASS" starttime="20211206 21:35:53.969" endtime="20211206 21:35:54.017"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${elements_textbox}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 21:35:54.017" endtime="20211206 21:35:54.046"/>
+</kw>
+<status status="PASS" starttime="20211206 21:35:53.948" endtime="20211206 21:35:54.047"/>
 </kw>
 <kw name="Select Text Box from Elements Menu" library="ElementsPO">
-<status status="NOT RUN" starttime="20211206 20:02:17.533" endtime="20211206 20:02:17.533"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elements_textbox}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:35:54.047" endtime="20211206 21:35:54.064"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${elements_textbox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:35:54.065" level="INFO">Clicking element '//span[contains(text(),'Text Box')]'.</msg>
+<status status="PASS" starttime="20211206 21:35:54.064" endtime="20211206 21:35:54.107"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${textbox_title}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 21:35:54.107" endtime="20211206 21:35:54.123"/>
+</kw>
+<status status="PASS" starttime="20211206 21:35:54.047" endtime="20211206 21:35:54.123"/>
 </kw>
 <kw name="Verify Text Box Form is Displayed" library="ElementsPO">
-<status status="NOT RUN" starttime="20211206 20:02:17.533" endtime="20211206 20:02:17.533"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${label_username}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:35:54.123" endtime="20211206 21:35:54.146"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${label_useremail}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:35:54.146" endtime="20211206 21:35:54.171"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${label_address}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:35:54.171" endtime="20211206 21:35:54.192"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${label_permaddress}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:35:54.192" endtime="20211206 21:35:54.210"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${submit_button}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 21:35:54.210" endtime="20211206 21:35:54.222"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:35:57.224" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211206 21:35:54.222" endtime="20211206 21:35:57.224"/>
+</kw>
+<status status="PASS" starttime="20211206 21:35:54.123" endtime="20211206 21:35:57.224"/>
 </kw>
 <kw name="Fill Text Box Form" library="ElementsPO">
-<status status="NOT RUN" starttime="20211206 20:02:17.533" endtime="20211206 20:02:17.533"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${field_username}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:35:57.225" endtime="20211206 21:35:57.251"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${field_username}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:35:57.251" level="INFO">Clicking element '//input[@id='userName']'.</msg>
+<status status="PASS" starttime="20211206 21:35:57.251" endtime="20211206 21:35:57.290"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field_username}</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211206 21:35:57.290" level="INFO">Typing text 'Juan Torre' into text field '//input[@id='userName']'.</msg>
+<status status="PASS" starttime="20211206 21:35:57.290" endtime="20211206 21:35:57.358"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:35:58.360" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211206 21:35:57.359" endtime="20211206 21:35:58.360"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${field_useremail}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:35:58.360" endtime="20211206 21:35:58.383"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${field_useremail}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:35:58.384" level="INFO">Clicking element '//input[@id='userEmail']'.</msg>
+<status status="PASS" starttime="20211206 21:35:58.384" endtime="20211206 21:35:58.415"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field_useremail}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211206 21:35:58.415" level="INFO">Typing text 'test@mail.com' into text field '//input[@id='userEmail']'.</msg>
+<status status="PASS" starttime="20211206 21:35:58.415" endtime="20211206 21:35:58.460"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:35:59.461" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211206 21:35:58.460" endtime="20211206 21:35:59.461"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${field_address}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:35:59.461" endtime="20211206 21:35:59.485"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${field_address}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:35:59.486" level="INFO">Clicking element '//textarea[@id='currentAddress']'.</msg>
+<status status="PASS" starttime="20211206 21:35:59.486" endtime="20211206 21:35:59.512"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field_address}</arg>
+<arg>${current_address}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211206 21:35:59.513" level="INFO">Typing text 'tester street 140-b' into text field '//textarea[@id='currentAddress']'.</msg>
+<status status="PASS" starttime="20211206 21:35:59.512" endtime="20211206 21:35:59.555"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:36:00.555" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211206 21:35:59.555" endtime="20211206 21:36:00.555"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${field_permaddress}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:36:00.556" endtime="20211206 21:36:00.580"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${field_permaddress}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:36:00.580" level="INFO">Clicking element '//textarea[@id='permanentAddress']'.</msg>
+<status status="PASS" starttime="20211206 21:36:00.580" endtime="20211206 21:36:00.615"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field_permaddress}</arg>
+<arg>${permanent adress}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211206 21:36:00.616" level="INFO">Typing text 'tester avenue 1520' into text field '//textarea[@id='permanentAddress']'.</msg>
+<status status="PASS" starttime="20211206 21:36:00.616" endtime="20211206 21:36:00.658"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:36:01.659" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211206 21:36:00.659" endtime="20211206 21:36:01.659"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${submit_button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:36:01.659" endtime="20211206 21:36:01.679"/>
+</kw>
+<status status="PASS" starttime="20211206 21:35:57.224" endtime="20211206 21:36:01.679"/>
 </kw>
 <kw name="Click Submit button" library="ElementsPO">
-<status status="NOT RUN" starttime="20211206 20:02:17.533" endtime="20211206 20:02:17.533"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${submit_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:36:01.680" level="INFO">Clicking element '//button[@id='submit']'.</msg>
+<status status="PASS" starttime="20211206 21:36:01.679" endtime="20211206 21:36:01.711"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:36:03.712" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:36:01.711" endtime="20211206 21:36:03.712"/>
+</kw>
+<status status="PASS" starttime="20211206 21:36:01.679" endtime="20211206 21:36:03.713"/>
 </kw>
 <kw name="Verify Form is Submitted" library="ElementsPO">
-<status status="NOT RUN" starttime="20211206 20:02:17.533" endtime="20211206 20:02:17.533"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>//p[@id='name']</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:36:03.714" endtime="20211206 21:36:03.737"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>//p[@id='email']</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:36:03.737" endtime="20211206 21:36:03.760"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>//p[@id='currentAddress']</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:36:03.760" endtime="20211206 21:36:03.780"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>//p[@id='permanentAddress']</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:36:03.781" endtime="20211206 21:36:03.800"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:36:05.802" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:36:03.800" endtime="20211206 21:36:05.802"/>
+</kw>
+<status status="PASS" starttime="20211206 21:36:03.713" endtime="20211206 21:36:05.802"/>
 </kw>
 <kw name="Click the Header Image" library="LandingPagePO">
-<status status="NOT RUN" starttime="20211206 20:02:17.533" endtime="20211206 20:02:17.533"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${header_image}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:36:05.803" endtime="20211206 21:36:05.825"/>
 </kw>
-<kw name="Reload Page" library="SeleniumLibrary">
-<doc>Simulates user reloading page.</doc>
-<status status="NOT RUN" starttime="20211206 20:02:17.534" endtime="20211206 20:02:17.534"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${header_image}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:36:05.825" level="INFO">Clicking element '//header/a[1]/img[1]'.</msg>
+<status status="PASS" starttime="20211206 21:36:05.825" endtime="20211206 21:36:06.348"/>
 </kw>
-<status status="FAIL" starttime="20211206 20:02:17.523" endtime="20211206 20:02:17.534">NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 5...
-    [ Message content over the limit has been removed. ]
-...hromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</status>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:36:08.349" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:36:06.348" endtime="20211206 21:36:08.349"/>
+</kw>
+<status status="PASS" starttime="20211206 21:36:05.803" endtime="20211206 21:36:08.350"/>
+</kw>
+<status status="PASS" starttime="20211206 21:35:48.816" endtime="20211206 21:36:08.350"/>
 </test>
 <test id="s1-t4" name="Test the Radio Button Functionality">
 <kw name="Navigate to Elements Page" library="ElementsPO">
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${menu_elements}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211206 20:02:17.543" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 511011
-9   chromedriver                        0x000000010c60c75e chromedriver + 337758
-10  chromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
-</msg>
-<status status="FAIL" starttime="20211206 20:02:17.539" endtime="20211206 20:02:17.543"/>
-</kw>
-<msg timestamp="20211206 20:02:17.543" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 5...
-    [ Message content over the limit has been removed. ]
-...hromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
-<msg timestamp="20211206 20:02:17.544" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 511011
-9   chromedriver                        0x000000010c60c75e chromedriver + 337758
-10  chromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
-</msg>
-<status status="FAIL" starttime="20211206 20:02:17.535" endtime="20211206 20:02:17.544"/>
+<status status="PASS" starttime="20211206 21:36:08.352" endtime="20211206 21:36:08.373"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${menu_elements}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20211206 20:02:17.544" endtime="20211206 20:02:17.544"/>
+<msg timestamp="20211206 21:36:08.374" level="INFO">Clicking element '//h5[contains(text(),'Elements')]'.</msg>
+<status status="PASS" starttime="20211206 21:36:08.374" endtime="20211206 21:36:08.417"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20211206 20:02:17.544" endtime="20211206 20:02:17.544"/>
+<msg timestamp="20211206 21:36:10.417" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:36:08.417" endtime="20211206 21:36:10.418"/>
 </kw>
-<status status="FAIL" starttime="20211206 20:02:17.535" endtime="20211206 20:02:17.545"/>
+<status status="PASS" starttime="20211206 21:36:08.351" endtime="20211206 21:36:10.418"/>
 </kw>
 <kw name="Verify Elements Menu Navigations is Displayed" library="ElementsPO">
-<status status="NOT RUN" starttime="20211206 20:02:17.545" endtime="20211206 20:02:17.545"/>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${elements_menu}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 21:36:10.419" endtime="20211206 21:36:10.441"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${alerts_menu}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 21:36:10.441" endtime="20211206 21:36:10.460"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${widgets_menu}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 21:36:10.460" endtime="20211206 21:36:10.475"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:36:13.478" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211206 21:36:10.475" endtime="20211206 21:36:13.478"/>
+</kw>
+<status status="PASS" starttime="20211206 21:36:10.418" endtime="20211206 21:36:13.478"/>
 </kw>
 <kw name="Click Elements sub-menu" library="ElementsPO">
-<status status="NOT RUN" starttime="20211206 20:02:17.545" endtime="20211206 20:02:17.545"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elements_menu}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:36:13.479" endtime="20211206 21:36:13.503"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${elements_menu}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:36:13.503" level="INFO">Clicking element '//div[@class="header-text"][contains(text(),'Elements')]'.</msg>
+<status status="PASS" starttime="20211206 21:36:13.503" endtime="20211206 21:36:13.543"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${elements_textbox}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 21:36:13.543" endtime="20211206 21:36:13.558"/>
+</kw>
+<status status="PASS" starttime="20211206 21:36:13.479" endtime="20211206 21:36:13.558"/>
 </kw>
 <kw name="Select Radio Button from Elements Menu" library="ElementsPO">
-<status status="NOT RUN" starttime="20211206 20:02:17.545" endtime="20211206 20:02:17.545"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elements_radiobutton}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:36:13.559" endtime="20211206 21:36:13.584"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${elements_radiobutton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:36:13.585" level="INFO">Clicking element '//span[contains(text(),'Radio Button')]'.</msg>
+<status status="PASS" starttime="20211206 21:36:13.584" endtime="20211206 21:36:13.623"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${radiobutton_title}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 21:36:13.623" endtime="20211206 21:36:13.638"/>
+</kw>
+<status status="PASS" starttime="20211206 21:36:13.558" endtime="20211206 21:36:13.638"/>
 </kw>
 <kw name="Select Yes Radio Button" library="ElementsPO">
-<status status="NOT RUN" starttime="20211206 20:02:17.546" endtime="20211206 20:02:17.546"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${yes_button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:36:13.639" endtime="20211206 21:36:13.659"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${yes_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:36:13.660" level="INFO">Clicking element '//label[contains(text(),'Yes')]'.</msg>
+<status status="PASS" starttime="20211206 21:36:13.659" endtime="20211206 21:36:13.692"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${yes_selected}</var>
+<arg>Yes</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211206 21:36:13.692" level="INFO">${yes_selected} = Yes</msg>
+<status status="PASS" starttime="20211206 21:36:13.692" endtime="20211206 21:36:13.692"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//span[contains(text(),'${yes_selected}')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211206 21:36:13.692" endtime="20211206 21:36:13.700"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:36:15.701" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:36:13.700" endtime="20211206 21:36:15.701"/>
+</kw>
+<status status="PASS" starttime="20211206 21:36:13.638" endtime="20211206 21:36:15.702"/>
 </kw>
 <kw name="Select Impressive Radio Button" library="ElementsPO">
-<status status="NOT RUN" starttime="20211206 20:02:17.546" endtime="20211206 20:02:17.546"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${impressive_button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:36:15.702" endtime="20211206 21:36:15.727"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${impressive_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:36:15.728" level="INFO">Clicking element '//label[contains(text(),'Impressive')]'.</msg>
+<status status="PASS" starttime="20211206 21:36:15.727" endtime="20211206 21:36:15.760"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${impressive_selected}</var>
+<arg>Impressive</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211206 21:36:15.760" level="INFO">${impressive_selected} = Impressive</msg>
+<status status="PASS" starttime="20211206 21:36:15.760" endtime="20211206 21:36:15.760"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//span[contains(text(),'${impressive_selected}')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211206 21:36:15.760" endtime="20211206 21:36:15.769"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:36:17.770" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:36:15.769" endtime="20211206 21:36:17.770"/>
+</kw>
+<status status="PASS" starttime="20211206 21:36:15.702" endtime="20211206 21:36:17.771"/>
 </kw>
 <kw name="Click the Header Image" library="LandingPagePO">
-<status status="NOT RUN" starttime="20211206 20:02:17.546" endtime="20211206 20:02:17.546"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${header_image}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:36:17.771" endtime="20211206 21:36:17.797"/>
 </kw>
-<kw name="Reload Page" library="SeleniumLibrary">
-<doc>Simulates user reloading page.</doc>
-<status status="NOT RUN" starttime="20211206 20:02:17.546" endtime="20211206 20:02:17.546"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${header_image}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:36:17.798" level="INFO">Clicking element '//header/a[1]/img[1]'.</msg>
+<status status="PASS" starttime="20211206 21:36:17.797" endtime="20211206 21:36:18.307"/>
 </kw>
-<status status="FAIL" starttime="20211206 20:02:17.534" endtime="20211206 20:02:17.546">NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 5...
-    [ Message content over the limit has been removed. ]
-...hromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</status>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:36:20.310" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:36:18.308" endtime="20211206 21:36:20.310"/>
+</kw>
+<status status="PASS" starttime="20211206 21:36:17.771" endtime="20211206 21:36:20.311"/>
+</kw>
+<status status="PASS" starttime="20211206 21:36:08.351" endtime="20211206 21:36:20.311"/>
 </test>
 <test id="s1-t5" name="Test Small Modal dialogs">
 <kw name="Navigate to Alerts Page" library="LandingPagePO">
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${menu_alerts}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211206 20:02:17.554" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 511011
-9   chromedriver                        0x000000010c60c75e chromedriver + 337758
-10  chromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
-</msg>
-<status status="FAIL" starttime="20211206 20:02:17.550" endtime="20211206 20:02:17.554"/>
-</kw>
-<msg timestamp="20211206 20:02:17.554" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 5...
-    [ Message content over the limit has been removed. ]
-...hromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
-<msg timestamp="20211206 20:02:17.555" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 511011
-9   chromedriver                        0x000000010c60c75e chromedriver + 337758
-10  chromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
-</msg>
-<status status="FAIL" starttime="20211206 20:02:17.547" endtime="20211206 20:02:17.555"/>
+<status status="PASS" starttime="20211206 21:36:20.313" endtime="20211206 21:36:20.339"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${menu_alerts}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20211206 20:02:17.556" endtime="20211206 20:02:17.556"/>
+<msg timestamp="20211206 21:36:20.340" level="INFO">Clicking element '//h5[contains(text(),'Alerts, Frame &amp; Windows')]'.</msg>
+<status status="PASS" starttime="20211206 21:36:20.340" endtime="20211206 21:36:20.383"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20211206 20:02:17.556" endtime="20211206 20:02:17.556"/>
+<msg timestamp="20211206 21:36:22.384" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:36:20.384" endtime="20211206 21:36:22.385"/>
 </kw>
-<status status="FAIL" starttime="20211206 20:02:17.547" endtime="20211206 20:02:17.556"/>
+<status status="PASS" starttime="20211206 21:36:20.312" endtime="20211206 21:36:22.385"/>
 </kw>
 <kw name="Select Modal Dialogs from Alerts menu" library="AlertsPO">
-<status status="NOT RUN" starttime="20211206 20:02:17.556" endtime="20211206 20:02:17.556"/>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${elements_modal_dialogs}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 21:36:22.386" endtime="20211206 21:36:22.406"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${elements_modal_dialogs}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211206 21:36:22.406" endtime="20211206 21:36:22.671"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elements_modal_dialogs}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:36:22.672" endtime="20211206 21:36:22.691"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${elements_modal_dialogs}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:36:22.691" level="INFO">Clicking element '//span[contains(text(),'Modal Dialogs')]'.</msg>
+<status status="PASS" starttime="20211206 21:36:22.691" endtime="20211206 21:36:22.730"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:36:24.731" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:36:22.731" endtime="20211206 21:36:24.731"/>
+</kw>
+<status status="PASS" starttime="20211206 21:36:22.385" endtime="20211206 21:36:24.732"/>
 </kw>
 <kw name="Verify Modal Dialogs are Displayed" library="AlertsPO">
-<status status="NOT RUN" starttime="20211206 20:02:17.557" endtime="20211206 20:02:17.557"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${modal_dialogs_title}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:36:24.732" endtime="20211206 21:36:24.756"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${modals_instructions}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:36:24.757" endtime="20211206 21:36:24.779"/>
+</kw>
+<status status="PASS" starttime="20211206 21:36:24.732" endtime="20211206 21:36:24.779"/>
 </kw>
 <kw name="Click on the Small Modal" library="AlertsPO">
-<status status="NOT RUN" starttime="20211206 20:02:17.557" endtime="20211206 20:02:17.557"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${smallmodal_button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:36:24.780" endtime="20211206 21:36:24.800"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${smallmodal_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:36:24.800" level="INFO">Clicking element '//button[@id='showSmallModal']'.</msg>
+<status status="PASS" starttime="20211206 21:36:24.800" endtime="20211206 21:36:24.907"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:36:26.909" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:36:24.907" endtime="20211206 21:36:26.909"/>
+</kw>
+<status status="PASS" starttime="20211206 21:36:24.779" endtime="20211206 21:36:26.910"/>
 </kw>
 <kw name="Verify Small Modal is Displayed" library="AlertsPO">
-<status status="NOT RUN" starttime="20211206 20:02:17.557" endtime="20211206 20:02:17.557"/>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${smallmodal_title}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 21:36:26.910" endtime="20211206 21:36:26.928"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${smallmodal_text}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 21:36:26.929" endtime="20211206 21:36:26.944"/>
+</kw>
+<status status="PASS" starttime="20211206 21:36:26.910" endtime="20211206 21:36:26.945"/>
 </kw>
 <kw name="Close the Small Modal" library="AlertsPO">
-<status status="NOT RUN" starttime="20211206 20:02:17.557" endtime="20211206 20:02:17.557"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${smallmodal_close_button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:36:26.945" endtime="20211206 21:36:26.968"/>
 </kw>
-<kw name="Reload Page" library="SeleniumLibrary">
-<doc>Simulates user reloading page.</doc>
-<status status="NOT RUN" starttime="20211206 20:02:17.557" endtime="20211206 20:02:17.557"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${smallmodal_close_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:36:26.968" level="INFO">Clicking element '//button[@id='closeSmallModal']'.</msg>
+<status status="PASS" starttime="20211206 21:36:26.968" endtime="20211206 21:36:26.997"/>
 </kw>
-<status status="FAIL" starttime="20211206 20:02:17.547" endtime="20211206 20:02:17.557">NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 5...
-    [ Message content over the limit has been removed. ]
-...hromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</status>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:36:28.999" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:36:26.998" endtime="20211206 21:36:28.999"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<arg>${smallmodal_title}</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" starttime="20211206 21:36:28.999" endtime="20211206 21:36:29.005"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<arg>${smallmodal_text}</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" starttime="20211206 21:36:29.005" endtime="20211206 21:36:29.011"/>
+</kw>
+<status status="PASS" starttime="20211206 21:36:26.945" endtime="20211206 21:36:29.011"/>
+</kw>
+<status status="PASS" starttime="20211206 21:36:20.312" endtime="20211206 21:36:29.011"/>
 </test>
 <test id="s1-t6" name="Test Large Modal dialog">
 <kw name="Verify Modal Dialogs are Displayed" library="AlertsPO">
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${modal_dialogs_title}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211206 20:02:17.565" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 511011
-9   chromedriver                        0x000000010c60c75e chromedriver + 337758
-10  chromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
-</msg>
-<status status="FAIL" starttime="20211206 20:02:17.561" endtime="20211206 20:02:17.565"/>
-</kw>
-<msg timestamp="20211206 20:02:17.565" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 5...
-    [ Message content over the limit has been removed. ]
-...hromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
-<msg timestamp="20211206 20:02:17.566" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 511011
-9   chromedriver                        0x000000010c60c75e chromedriver + 337758
-10  chromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15
-</msg>
-<status status="FAIL" starttime="20211206 20:02:17.558" endtime="20211206 20:02:17.566"/>
+<status status="PASS" starttime="20211206 21:36:29.012" endtime="20211206 21:36:29.030"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${modals_instructions}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="NOT RUN" starttime="20211206 20:02:17.566" endtime="20211206 20:02:17.567"/>
+<status status="PASS" starttime="20211206 21:36:29.030" endtime="20211206 21:36:29.045"/>
 </kw>
-<status status="FAIL" starttime="20211206 20:02:17.558" endtime="20211206 20:02:17.567"/>
+<status status="PASS" starttime="20211206 21:36:29.012" endtime="20211206 21:36:29.045"/>
 </kw>
 <kw name="Click on the Large Modal" library="AlertsPO">
-<status status="NOT RUN" starttime="20211206 20:02:17.567" endtime="20211206 20:02:17.567"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${largemodal_button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:36:29.046" endtime="20211206 21:36:29.070"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${largemodal_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:36:29.070" level="INFO">Clicking element '//button[@id='showLargeModal']'.</msg>
+<status status="PASS" starttime="20211206 21:36:29.070" endtime="20211206 21:36:29.104"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:36:31.105" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:36:29.104" endtime="20211206 21:36:31.105"/>
+</kw>
+<status status="PASS" starttime="20211206 21:36:29.045" endtime="20211206 21:36:31.106"/>
 </kw>
 <kw name="Verify Large Modal is Displayed" library="AlertsPO">
-<status status="NOT RUN" starttime="20211206 20:02:17.567" endtime="20211206 20:02:17.567"/>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${largemodal_title}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 21:36:31.106" endtime="20211206 21:36:31.124"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${largemodal_text}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211206 21:36:31.124" endtime="20211206 21:36:31.142"/>
+</kw>
+<status status="PASS" starttime="20211206 21:36:31.106" endtime="20211206 21:36:31.142"/>
 </kw>
 <kw name="Close the Large Modal" library="AlertsPO">
-<status status="NOT RUN" starttime="20211206 20:02:17.567" endtime="20211206 20:02:17.567"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${largemodal_close_button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:36:31.143" endtime="20211206 21:36:31.164"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${largemodal_close_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:36:31.165" level="INFO">Clicking element '//button[@id='closeLargeModal']'.</msg>
+<status status="PASS" starttime="20211206 21:36:31.164" endtime="20211206 21:36:31.194"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:36:33.195" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:36:31.194" endtime="20211206 21:36:33.196"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<arg>${largemodal_title}</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" starttime="20211206 21:36:33.196" endtime="20211206 21:36:33.204"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<arg>${largemodal_text}</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" starttime="20211206 21:36:33.204" endtime="20211206 21:36:33.210"/>
+</kw>
+<status status="PASS" starttime="20211206 21:36:31.142" endtime="20211206 21:36:33.210"/>
 </kw>
 <kw name="Click the Header Image" library="LandingPagePO">
-<status status="NOT RUN" starttime="20211206 20:02:17.568" endtime="20211206 20:02:17.568"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${header_image}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211206 21:36:33.210" endtime="20211206 21:36:33.228"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${header_image}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 21:36:33.228" level="INFO">Clicking element '//header/a[1]/img[1]'.</msg>
+<status status="PASS" starttime="20211206 21:36:33.228" endtime="20211206 21:36:33.708"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211206 21:36:35.709" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211206 21:36:33.708" endtime="20211206 21:36:35.709"/>
+</kw>
+<status status="PASS" starttime="20211206 21:36:33.210" endtime="20211206 21:36:35.710"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" starttime="20211206 20:02:17.568" endtime="20211206 20:02:17.568"/>
+<status status="PASS" starttime="20211206 21:36:35.710" endtime="20211206 21:36:35.786"/>
 </kw>
-<status status="FAIL" starttime="20211206 20:02:17.558" endtime="20211206 20:02:17.568">NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 5...
-    [ Message content over the limit has been removed. ]
-...hromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</status>
+<status status="PASS" starttime="20211206 21:36:29.011" endtime="20211206 21:36:35.786"/>
 </test>
-<status status="FAIL" starttime="20211206 20:02:00.922" endtime="20211206 20:02:17.569"/>
+<status status="PASS" starttime="20211206 21:35:06.128" endtime="20211206 21:36:35.788"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="6" skip="0">All Tests</stat>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="6" skip="0" id="s1" name="DemoQATest">DemoQATest</stat>
+<stat pass="6" fail="0" skip="0" id="s1" name="DemoQATest">DemoQATest</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20211206 20:02:17.506" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 5...
-    [ Message content over the limit has been removed. ]
-...hromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
-<msg timestamp="20211206 20:02:17.517" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 5...
-    [ Message content over the limit has been removed. ]
-...hromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
-<msg timestamp="20211206 20:02:17.530" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 5...
-    [ Message content over the limit has been removed. ]
-...hromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
-<msg timestamp="20211206 20:02:17.543" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 5...
-    [ Message content over the limit has been removed. ]
-...hromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
-<msg timestamp="20211206 20:02:17.554" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 5...
-    [ Message content over the limit has been removed. ]
-...hromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
-<msg timestamp="20211206 20:02:17.565" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: window was already closed
-  (Session info: chrome=96.0.4664.93)
-Stacktrace:
-0   chromedriver                        0x000000010ca9b269 __gxx_personality_v0 + 582729
-1   chromedriver                        0x000000010ca26c33 __gxx_personality_v0 + 106003
-2   chromedriver                        0x000000010c5e3e28 chromedriver + 171560
-3   chromedriver                        0x000000010c5d3a95 chromedriver + 105109
-4   chromedriver                        0x000000010c5d4f42 chromedriver + 110402
-5   chromedriver                        0x000000010c5cdc22 chromedriver + 80930
-6   chromedriver                        0x000000010c5e52b3 chromedriver + 176819
-7   chromedriver                        0x000000010c648b0c chromedriver + 584460
-8   chromedriver                        0x000000010c636c23 chromedriver + 5...
-    [ Message content over the limit has been removed. ]
-...hromedriver                        0x000000010c60da95 chromedriver + 342677
-11  chromedriver                        0x000000010ca578ab __gxx_personality_v0 + 305803
-12  chromedriver                        0x000000010ca6e863 __gxx_personality_v0 + 399939
-13  chromedriver                        0x000000010ca73c7f __gxx_personality_v0 + 421471
-14  chromedriver                        0x000000010ca6fbba __gxx_personality_v0 + 404890
-15  chromedriver                        0x000000010ca4be51 __gxx_personality_v0 + 258097
-16  chromedriver                        0x000000010ca8b158 __gxx_personality_v0 + 516920
-17  chromedriver                        0x000000010ca8b2e1 __gxx_personality_v0 + 517313
-18  chromedriver                        0x000000010caa26f8 __gxx_personality_v0 + 612568
-19  libsystem_pthread.dylib             0x00007ff80ebef514 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff80ebeb02f thread_start + 15</msg>
 </errors>
 </robot>
